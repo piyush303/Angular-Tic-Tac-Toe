@@ -1,0 +1,9 @@
+<h2>Next Player - {{ nextPlayer }}</h2>
+<h3>Winner - {{ winner }}</h3>
+
+<div class="board-wrapper">
+  @for (square of initialGameBoard; let index = $index; track index) {
+
+  <app-square [player]="initialGameBoard[index]" (onClick)="onClick(index)" />
+  }
+</div>

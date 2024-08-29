@@ -1,0 +1,6 @@
+.board-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 170px;
+  grid-gap: 10px;
+}
